@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munitions Inventory Management System</title>
+    <link rel="stylesheet" href="main.css">
+    <script src ='server.js' defer></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Saira+Stencil+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="h1">
+        <h1>Munitions Inventory Management System (MIMS)</h1>
+    </div>
+    <div class="formContainer">
+        <form action ="ATR Form" method="post" id="Submit ATR">
+            <h2>Point of Contact:</h2>
+            <div class="field">
+                <input type="text" id="RateRank" name="RateRank" placeholder="Rating/Rank"/>
+                <input type="text" id="firstname" name="firstname" placeholder="First Name"/>
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name"/>
+            </div>
+            <h2>DODIC and NIIN</h2>
+            <div class = "field">
+                <input type="text" id="DODIC" name="DODIC" placeholder="DODIC"/>
+                <input type="text" id="NIIN" name="NIIN" placeholder="NIIN"/>
+            </div>
+            <h2>Lot Number and Condition Code</h2>
+            <div>
+                <input type="text" id="LotNo" name="LotNo" placeholder="Lot Number"/>
+                <input type="text" id="ConditionCode" name="ConditionCode" placeholder="Condition Code"/>
+            </div>
+            <h2>Transaction and Source Codes</h2>
+            <div class="field">
+                <input type="text" id="TransactionCode" name="TransactionCode" placeholder="Transaction Code"/>
+                <input type="text" id="SourceCode" name="SourceCode" placeholder="Source Code"/>
+            </div>
+            <h2>Document Number and Consignee/Consignor <br>(Receipts and Issues Only)</h2>
+            <div>
+                <input type="text" id="DocNo" name="DocNo" placeholder="Document Number"/>
+                <input type="text" id="Consignee" name="Consignee" placeholder="Consignee"/>
+                <input type="text" id="Cosignore" name="Consignor" placeholder="Consignor"/>
+            </div>
+            <h2>Transaction Quantity</h2>
+            <div class="field">
+                <input type="text" id="DODIC" name="DODIC" placeholder="Transaction Quantity"/>
+            </div> 
+            <h2>Comments (Optional)</h2>
+            <div class="field">
+                <input type="text" id="Comments" name="Comments"/>
+            </div> 
+            <div>
+            <input type="submit" id="SubmitButton" value="Submit Transaction"></input>
+            </div>
+        </form>
+    </div>
+
+    <div class="Transaction_Retreivals_Container">
+        <div id="RetrievalHead">
+            <h2>Transaction Retrieval</h2>
+        </div>
+        <div class='RetrievalButtonsDiv'>
+        <button class="retrievalButtons" id="viewTransactions">All</button>       
+        <button class="retrievalButtons" id="viewByDODIC">By DODIC</button>
+        </div>
+    </div>
+</body>
+</html>

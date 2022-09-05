@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(78, 91, 49);
+}
+
+#h1 {
+    font-family: 'Saira Stencil One';
+    font-size: 20px;
+    font-weight: 25;
+    text-align: center;
+    color: #ffab23;
+    position:relative;
+    top: 0;
+    display: flex;
+    z-index: 1;
+    width: auto;
+}
+
+.formContainer {
+    width: 600px;
+}
+input[type=text]{
+display: inline;
+}
+
+input[type=submit]{
+        background-color:#ffab23;
+        border-radius:6px;
+        border: 2px solid black;
+        display:inline-block;
+        cursor:pointer;
+        color:#000000;
+        font-family:'Times New Roman', Times, serif;
+        font-size:  20px;
+        font-weight:100;
+        padding: 5px 24px;
+        width: 200px;
+    }
+    input[type=submit]:hover {
+        background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+        background-color:#ffab23;
+    }
+    input[type=submit]:active {
+        position:relative;
+        top:1px;
+}
+
+#Comments {
+    width: 400px;
+}
+
+.Transaction_Retreivals_Container{
+    display: absolute;
+    position: fixed;
+    right: 10px;
+    top: 200px;
+    border: 3px solid black;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+#RetrievalHead{
+    text-align:center;
+    top: 0;
+ }
+
+
+ .RetrievalButtonsDiv{
+    text-align: center;
+ }
+
+ .retrievalButtons{
+    background-color:#ffab23;
+    border-radius:6px;
+    border: 2px solid black;
+    display:inline;
+    cursor:pointer;
+    color:#000000;
+    font-family:'Times New Roman', Times, serif;
+    font-size:  20px;
+    font-weight:100;
+    padding: 5px 24px;    
+}
+.retrievalButtons:hover {
+    background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    background-color:#ffab23;
+}
+.retrievalButtonss:active {
+    position:relative;
+    top:1px;
+}
+
+
